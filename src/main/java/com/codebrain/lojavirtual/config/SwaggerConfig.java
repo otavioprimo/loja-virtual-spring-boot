@@ -14,9 +14,6 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-import static springfox.documentation.builders.PathSelectors.regex;
-
-
 @EnableSwagger2
 @Configuration
 public class SwaggerConfig extends WebMvcConfigurationSupport {
@@ -29,10 +26,10 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
   }
 
   private ApiInfo apiInfo() {
-    return new ApiInfoBuilder().title("Spring Boot REST API").description("\"Spring Boot REST API for Online Store\"")
+    return new ApiInfoBuilder().title("Loja Virtual").description("\"Loja Virtual Com Spring Boot\"")
         .version("1.0.0").license("Apache License Version 2.0")
         .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0\"")
-        .contact(new Contact("John Thompson", "https://springframework.guru/about/", "john@springfrmework.guru"))
+        .contact(new Contact("Otávio Primo", "https://github.com/otavioprimo", "otavioprimo@gmail.com"))
         .build();
   }
 
